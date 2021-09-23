@@ -56,10 +56,12 @@ function deleteTodo(e){
     e.preventDefault();
     const item = e.target;
     if(item.classList[0]==="trash"){
-        item.parentNode.classList.toggle("deleted");
-        
+        item.parentNode.classList.toggle("deleted");  
+        item.parentNode.addEventListener('transitionend', function(){
+            item.parentNode.remove();
+        }) ;
     }
     if(item.classList[0]==="check"){
-        item.parentNode.classList.add("completed");
+        item.parentNode.classList.toggle("completed");
     }
 }
