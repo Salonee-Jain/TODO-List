@@ -56,6 +56,10 @@ function deleteTodo(e){
     e.preventDefault();
     const item = e.target;
     if(item.classList[0]==="trash"){
-        item.parentNode.remove();
+        item.parentNode.classList.toggle("deleted");
+        
+    }
+    if(item.classList[0]==="check"){
+        item.parentNode.classList.add("completed");
     }
 }
