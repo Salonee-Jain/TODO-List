@@ -68,6 +68,7 @@ header,form{
     margin: 0.5rem;
     font-size: 1rem;
     background-color:white;
+    transition: all 0.2s ease;
 
     
 }
@@ -82,19 +83,17 @@ header,form{
 
 }
 
-.todo .todo-item{
-    height: 26px;
-    width: 100px;
-    background-color: white;
-    list-style: none;
-   
-    
-}
 .todo-item{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0rem 0.5rem;
+    transition: all 0.2s ease;
+    height: 26px;
+    width: 100px;
+    background-color: white;
+    list-style: none;
+   
 
    
 }
@@ -107,27 +106,40 @@ header,form{
     font-size: 1rem;
 
 
+
     
 }
-button.trash{
+.trash{
     background-color:rgb(255, 81, 0);
     cursor: pointer;
     transition: all 0.2s;
     
+    
 }
-button.trash:hover{
+.trash:hover{
 background-color:rgb(240, 239, 239);
     color:  rgb(245, 121, 4);
     transition: all 0.2s;
 }
-button.check{
+.check{
     background-color: rgb(49, 214, 49);
     cursor: pointer;
     transition: all 0.2s;
 }
-button.check:hover{
+.check:hover{
     background-color:rgb(240, 239, 239);
         color:  rgb(49, 214, 49);
         transition: all 0.2s;
 }
 
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.deleted{
+    transform: translateX(8rem) rotate(20deg);
+    transition: all 0.2s ease;
+    opacity: 0;
+
+}
