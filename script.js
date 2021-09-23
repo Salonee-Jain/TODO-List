@@ -50,7 +50,6 @@ if(toDoInput.value!=""){
 } 
 
     
-
 }
 
 function deleteTodo(e){
