@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg, rgba(222,216,0,1) 0%, rgba(251,142,33,1) 81%);
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    min-height: 100vh;
+   
+}
+
+header,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+
+}
+
+
+.todo-input, .todo-button{
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background: white;
+    font-size: 1rem;
+    
+}
+
+
+
+.todo-button{
+    background: white;
+    color: rgb(250, 101, 1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.todo-button:hover{
+    background-color:rgb(250, 101, 1);
+    color:  white;
+    transition: all 0.2s;
+    
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    margin: 0.5rem;
+    min-width: 30%;
+    list-style: none;
+}
+
+
+.todo{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1rem;
+    background-color:white;
+
+    
+}
+.todo li{
+    flex: 1;
+}
+
+
+
+.trash .check{
+    border:none;
+
+}
+
+.todo .todo-item{
+    height: 26px;
+    width: 100px;
+    background-color: white;
+    list-style: none;
+   
+    
+}
+.todo-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0.5rem;
+
+   
+}
+
+.trash, .check{
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+
+
+    
+}
+button.trash{
+    background-color:rgb(255, 81, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+button.trash:hover{
+background-color:rgb(240, 239, 239);
+    color:  rgb(245, 121, 4);
+    transition: all 0.2s;
+}
+button.check{
+    background-color: rgb(49, 214, 49);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+button.check:hover{
+    background-color:rgb(240, 239, 239);
+        color:  rgb(49, 214, 49);
+        transition: all 0.2s;
+}
+
